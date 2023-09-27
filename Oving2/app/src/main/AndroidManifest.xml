@@ -19,8 +19,33 @@
             android:theme="@style/Theme.Oving2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Extra intent -->
+            <intent-filter>
+                <action android:name="ntnu.katarzsz.oving2.GENERATE_RANDOM_NUMBER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Test activity -->
+        <activity android:name=".TestActivity"
+            android:exported="true"
+            android:label="Test Activity"
+            android:theme="@style/Theme.Oving2">
+            <intent-filter>
+                <action android:name="ntnu.katarzsz.oving2.CHANGE_VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CalculatorActivity"
+            android:exported="true"
+            android:label="Calculator Activity"
+            android:theme="@style/Theme.Oving2">
+            <intent-filter>
+                <action android:name="ntnu.katarzsz.oving2.CALCULATOR" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/number1"
+        android:layout_width="310dp"
+        android:layout_height="51dp"
+        android:text="3" />
+    <TextView
+        android:id="@+id/number2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/answer_label"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="Answer:" />
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/upperLimit_label"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="Upper limit:" />
+    <EditText
+        android:id="@+id/upperLimit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="10" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAdd"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onMultiply"
+        android:text="Mulpiply" />
+</LinearLayout>

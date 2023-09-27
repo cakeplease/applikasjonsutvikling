@@ -1,46 +1,30 @@
 package ntnu.katarzsz.oving2
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import ntnu.katarzsz.oving2.ui.theme.Oving2Theme
+import android.view.View
+import android.widget.TextView
 
-class MainActivity : ComponentActivity() {
+
+class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            Oving2Theme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
-        }
+        setContentView(R.layout.activity_main)
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+    fun onGenerateNumberClick(view: View) {
+        val intent = Intent("ntnu.katarzsz.oving2.CHANGE_VIEW")
+        startActivityForResult(intent, 1)
+    }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Oving2Theme {
-        Greeting("Android")
+    fun goToCalculator(view: View) {
+        val intent = Intent("ntnu.katarzsz.oving2.CALCULATOR")
+        startActivity(intent)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
+        val textView = findViewById<View>(R.id.text_view_random_number) as TextView
+        textView.text = data.getStringExtra("randomNumber")
     }
 }
