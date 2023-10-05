@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <Button
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="80dp"
         android:onClick="onGenerateNumberClick"
-        android:text="Generate random number"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        />
+        android:text="Generate random number" />
 
     <Button
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="80dp"
         android:onClick="goToCalculator"
         android:text="Open calculator"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         />
 
     <TextView
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
         android:textAlignment="center"
         android:textSize="40sp"
         android:id="@+id/text_view_random_number"/>

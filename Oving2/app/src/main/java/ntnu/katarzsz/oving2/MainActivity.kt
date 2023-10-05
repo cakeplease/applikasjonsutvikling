@@ -14,8 +14,8 @@ class MainActivity : Activity() {
     }
 
     fun onGenerateNumberClick(view: View) {
-        val intent = Intent("ntnu.katarzsz.oving2.CHANGE_VIEW")
-        startActivityForResult(intent, 1)
+        val intent = Intent("ntnu.katarzsz.oving2.TEST")
+        startActivityForResult(intent, RequestCode.TEST)
     }
 
     fun goToCalculator(view: View) {
@@ -24,7 +24,10 @@ class MainActivity : Activity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
-        val textView = findViewById<View>(R.id.text_view_random_number) as TextView
-        textView.text = data.getStringExtra("randomNumber")
+        if (requestCode == RequestCode.TEST) {
+            val textView = findViewById<View>(R.id.text_view_random_number) as TextView
+            textView.text = data.getStringExtra("randomNumber")
+        }
+
     }
 }

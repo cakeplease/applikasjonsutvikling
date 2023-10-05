@@ -30,12 +30,12 @@
         </activity>
 
         <!-- Test activity -->
-        <activity android:name=".TestActivity"
+        <activity android:name=".NumberGenerator"
             android:exported="true"
             android:label="Test Activity"
             android:theme="@style/Theme.Oving2">
             <intent-filter>
-                <action android:name="ntnu.katarzsz.oving2.CHANGE_VIEW" />
+                <action android:name="ntnu.katarzsz.oving2.TEST" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

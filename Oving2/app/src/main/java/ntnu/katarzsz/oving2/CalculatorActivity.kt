@@ -1,7 +1,9 @@
 package ntnu.katarzsz.oving2
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
@@ -13,7 +15,10 @@ class CalculatorActivity : Activity() {
     }
 
     fun changeNumbers() {
-
+        val intent = Intent("ntnu.katarzsz.oving2.TEST")
+        var upperLimit = findViewById<View>(R.id.upperLimit) as TextView
+        intent.putExtra("upperLimit", Integer.parseInt(upperLimit.text.toString()))
+        startActivityForResult(intent, RequestCode.GENERATE_NUMBERS)
     }
 
     fun onAdd(view: View) {
@@ -47,4 +52,15 @@ class CalculatorActivity : Activity() {
 
         changeNumbers()
     }
+
+    public override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
+
+        if (requestCode == RequestCode.GENERATE_NUMBERS) {
+            val number1 = findViewById<View>(R.id.number1) as TextView
+            number1.text = data.getStringExtra("randomNumber").toString()
+            val number2 = findViewById<View>(R.id.number2) as TextView
+            number2.text = data.getStringExtra("randomNumber2").toString()
+        }
+    }
+
 }
