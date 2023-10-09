@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "ntnu.katarzsz.oving4"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "ntnu.katarzsz.oving4"
