@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Edit friend"
+        android:textSize="40sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="Navn"
+        android:id="@+id/edit_name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="Fødselsdato: dd.mm.yyyy"
+        android:id="@+id/edit_date"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Edit"
+        android:id="@+id/editFriendButton"
+        />
+
+
+
+</LinearLayout>

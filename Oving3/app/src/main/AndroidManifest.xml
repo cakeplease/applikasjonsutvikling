@@ -23,6 +23,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".EditFriendActivity"
+            android:exported="true"
+            android:label="Edit friend"
+            android:theme="@style/Theme.Oving3">
+            <intent-filter>
+                <action android:name="ntnu.katarzsz.oving3.EDIT_FRIEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

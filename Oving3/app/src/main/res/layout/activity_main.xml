@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Register friend"
+        android:textSize="35sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="Navn"
+        android:id="@+id/name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="Fødselsdato: dd.mm.yyyy"
+        android:id="@+id/date"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Register"
+        android:id="@+id/registerFriendButton"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Friend list"
+        android:textSize="35sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Click on one of the friends from the list to edit"
+        android:textSize="18sp"
+        />
+    <ListView
+        android:id="@+id/friend_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>

@@ -20,6 +20,7 @@ class NumberGenerator : Activity() {
         intent.putExtra("randomNumber2", value2.toString())
         //Toast.makeText(this, value.toString(), Toast.LENGTH_LONG).show()
         setResult(RESULT_OK, intent)
+
         finish()
     }
 
