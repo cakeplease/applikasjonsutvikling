@@ -2,19 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:id="@+id/picture_view"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <TextView
         android:id="@+id/game_title"
         android:textSize="30dp"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
         />
     <ImageView
         android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="400px"
+        android:layout_width="wrap_content"
+        android:layout_height="500px"
         />
     <TextView
         android:id="@+id/current_description"

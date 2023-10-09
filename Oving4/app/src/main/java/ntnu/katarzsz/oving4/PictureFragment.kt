@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.ListView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -29,7 +28,6 @@ class PictureFragment : Fragment() {
     }
 
     fun showPicture(position: Int) {
-        //Log.e("test", "Showing picture number: ${viewModel.games[position].getPicturePath()}")
         val bitmap = BitmapFactory.decodeResource(resources, viewModel.games[position].getPicturePath())
         imageView.setImageBitmap(bitmap)
         description.text = viewModel.games[position].getDescription()
