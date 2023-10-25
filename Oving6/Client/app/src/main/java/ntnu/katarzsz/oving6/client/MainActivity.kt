@@ -2,14 +2,12 @@ package ntnu.katarzsz.oving6.client
 
 import android.app.Activity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import kotlinx.coroutines.runBlocking
 
 class MainActivity : Activity() {
-
     lateinit var chat: TextView
     lateinit var chatBox: EditText
     lateinit var client: Client
@@ -27,7 +25,6 @@ class MainActivity : Activity() {
     }
 
     fun send(sendToServer: suspend (String) -> Unit) {
-        Log.e("message", "hmmm")
         chatBox = findViewById(R.id.chatBox)
         runBlocking {
             sendToServer(chatBox.text.toString())
