@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Oving7</string>
+    <string name="info">Bruk menyen til å hente ut informasjon</string>
+    <string name="settings">Innstillinger</string>
+    <string name="background_values_default_value">pink</string>
+    <string name="background_values">Background values</string>
+    <string name="background_color">backgroundColor</string>
+    <string name="back_button">Tilbake</string>
+    <string name="background_title">Bakgrunn</string>
+</resources>

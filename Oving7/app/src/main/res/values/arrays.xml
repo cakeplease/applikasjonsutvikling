@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="background_entries">
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>Blue</item>
+    </string-array>
+    <string-array name="background_values">
+        <item>pink</item>
+        <item>purple</item>
+        <item>blue</item>
+    </string-array>
+</resources>
